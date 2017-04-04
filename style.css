@@ -1,0 +1,102 @@
+.f1 {
+  letter-spacing: 6;
+  font-size: 4.5rem;
+}
+
+p {
+  margin: 15px auto;
+}
+nav {
+  margin-top: -1%;
+}
+
+
+.faded{
+  color: black;
+  opacity: 0.3;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.faded:hover {
+  opacity: 1.0;
+}
+
+.faded:visited {
+  color: inherit;
+}
+
+.cblock {
+  text-align: center;
+  max-width: 16rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.author {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  font-size: 0.8vw;
+  position: absolute;
+  padding: 5px;
+  background: rgba(0,0,0,0.75);
+  color: white;
+
+  opacity: 0;
+  bottom: 0;
+  left: -30%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+
+.cap-left figcaption { bottom: 0; left: -30%; }
+.cap-left:hover figcaption { left: 0; }
+
+.cap-right figcaption { bottom: 0; right: -30%; }
+.cap-right:hover figcaption { right: 0; }
+
+.cap-top figcaption { left: 0; top: -30%; }
+.cap-top:hover figcaption { top: 0; }
+
+.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot:hover figcaption { bottom: 0; }
+
+.storyboard {
+  width: 50%;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.storyboard figure {
+  width: 33%;
+  margin: 0;
+}
